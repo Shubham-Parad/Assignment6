@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const blogRoute = require('./routes/blog');
 
 //connect to DB
-mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://shubhamparad19:Uf0MLs0bKe9w9kyX@cluster0.uwhtkg2.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to DB')
 })
 
